@@ -1,12 +1,15 @@
-# p4_task
+# p4_task 
 ## Install:
 1. locally: Node, Mongo, Redis
 2. npm install
 
-## run: 
-npm start
+## run 
+### MacOS: 
+1. brew services start mongodb-community@4.4
+2. brew services start redis
+3. npm start
 
-## test:
+## manually test:
 use postman to run the following:
 1. Post: http://localhost:3000/register {"name":"George", "password": "1234", "email":"george@gmail.com", "role": 0}  
 2. Post: http://localhost:3000/login {"name":"George", "password": "1234"}
